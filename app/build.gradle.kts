@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.nequi_app_mobile"
+    namespace = "com.example.virtual_cashier_app_mobile"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.nequi_app_mobile"
+        applicationId = "com.example.virtual_cashier_app_mobile"
         minSdk = 31
         targetSdk = 34
         versionCode = 1

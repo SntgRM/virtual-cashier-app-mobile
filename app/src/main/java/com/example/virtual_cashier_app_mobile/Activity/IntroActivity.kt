@@ -1,10 +1,10 @@
-package com.example.nequi_app_mobile
+package com.example.virtual_cashier_app_mobile.Activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import com.example.nequi_app_mobile.databinding.ActivityIntroBinding
+import com.example.virtual_cashier_app_mobile.databinding.ActivityIntroBinding
 
 class IntroActivity : AppCompatActivity() {
     private lateinit var binding: ActivityIntroBinding

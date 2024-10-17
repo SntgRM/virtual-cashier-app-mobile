@@ -1,4 +1,4 @@
-package com.example.nequi_app_mobile
+package com.example.virtual_cashier_app_mobile
 
 import org.junit.Test
 

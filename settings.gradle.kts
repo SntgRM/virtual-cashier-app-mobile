@@ -21,5 +21,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "nequi-app-mobile"
+rootProject.name = "virtual-cashier-app-mobile"
 include(":app")
