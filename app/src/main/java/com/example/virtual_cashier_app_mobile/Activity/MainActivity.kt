@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         initRecyclerview()
         setBlueEffect()
         setVariable()
+        setupLogout()
 
 
     }
@@ -38,11 +39,16 @@ class MainActivity : AppCompatActivity() {
     private fun setVariable() {
         binding.cardBtn.setOnClickListener {
             startActivity(
-                Intent(
-                    this,
-                    ReportActivity::class.java
-                )
+                Intent(this, ReportActivity::class.java)
             )
+        }
+    }
+
+    private fun setupLogout() {
+        binding.logoutContainer.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 
@@ -51,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         val decorView=this.window.decorView
         val rootView=decorView.findViewById<View>(android.R.id.content) as ViewGroup
         val windowBackGround=decorView.background
-        binding.blueView.setupWith(
+        binding.blurView.setupWith(
             rootView,
             RenderScriptBlur(this)
 
@@ -60,8 +66,8 @@ class MainActivity : AppCompatActivity() {
             .setFrameClearDrawable(windowBackGround)
             .setBlurRadius(radius)
 
-        binding.blueView.setOutlineProvider(ViewOutlineProvider.BACKGROUND)
-        binding.blueView.setClipToOutline(true)
+        binding.blurView.setOutlineProvider(ViewOutlineProvider.BACKGROUND)
+        binding.blurView.setClipToOutline(true)
     }
 
     private fun initRecyclerview() {

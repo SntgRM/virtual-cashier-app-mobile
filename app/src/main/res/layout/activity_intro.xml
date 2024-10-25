@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/intro_pic"
     tools:context=".Activity.IntroActivity">
 
     <ImageView
@@ -17,8 +18,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/intro_pic" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/startBtn"
@@ -40,9 +40,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="La mejor app para \n manejar tu dinero"
+        android:textColor="@color/white"
         android:textSize="35sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@id/startBtn"
         app:layout_constraintStart_toStartOf="@id/startBtn" />
 
