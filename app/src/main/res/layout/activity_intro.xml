@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/intro_pic"
-    tools:context=".Activity.IntroActivity">
+    tools:context="com.example.visa.Activity.IntroActivity">
 
     <ImageView
         android:id="@+id/imageView"
