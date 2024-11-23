@@ -1,14 +1,15 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.example.virtual_cashier_app_mobile"
+    namespace = "com.visa"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.virtual_cashier_app_mobile"
+        applicationId = "com.visa"
         minSdk = 31
         targetSdk = 34
         versionCode = 1
@@ -26,22 +27,22 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
 
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
-
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -53,6 +54,7 @@ dependencies {
 
     implementation("com.mikhaellopez:circularprogressbar:3.1.0")
     implementation("com.github.Dimezis:BlurView:version-2.0.3")
+
     // Lifestyles
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
@@ -62,4 +64,8 @@ dependencies {
     // ViewModel
     implementation("androidx.activity:activity-ktx:1.4.0")
     implementation("com.github.bumptech.glide:glide:4.12.0")
+
+    // Firebase
+    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
+    implementation("com.google.firebase:firebase-auth")
 }

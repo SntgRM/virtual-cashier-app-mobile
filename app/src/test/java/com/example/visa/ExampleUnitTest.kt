@@ -1,4 +1,4 @@
-package com.example.virtual_cashier_app_mobile
+package com.example.visa
 
 import org.junit.Test
 
