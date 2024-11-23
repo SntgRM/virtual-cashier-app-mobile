@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="0.333"
-    tools:context=".Activity.ReportActivity">
+    tools:context="com.example.visa.Activity.ReportActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -262,6 +262,7 @@
 
                 <View
                     android:layout_width="1dp"
+
                     android:layout_height="match_parent"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
