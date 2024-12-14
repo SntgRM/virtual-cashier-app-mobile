@@ -7,22 +7,25 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="Visa"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Nequiappmobile"
+        android:theme="@style/Theme.Visa"
         tools:targetApi="31">
         <activity
-            android:name="com.example.visa.Activity.SignupActivity"
+            android:name=".Activity.ReportActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.visa.Activity.LoginActivity"
+            android:name=".Activity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.visa.Activity.ReportActivity"
+            android:name=".Activity.SignupActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.visa.Activity.IntroActivity"
+            android:name=".Activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.visa.Activity.MainActivity" />
+
     </application>
 
 </manifest>

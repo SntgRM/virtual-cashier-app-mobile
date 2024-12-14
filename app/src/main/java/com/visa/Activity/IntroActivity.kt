@@ -1,4 +1,4 @@
-package com.example.visa.Activity
+package com.visa.Activity
 
 import android.content.Intent
 import android.os.Bundle

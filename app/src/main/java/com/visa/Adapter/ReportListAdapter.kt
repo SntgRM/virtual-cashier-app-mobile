@@ -1,11 +1,11 @@
-package com.example.visa.Adapter
+package com.visa.Adapter
 
 import android.content.Context
 import android.icu.text.DecimalFormat
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.visa.Domain.BudgetDomain
+import com.visa.Domain.BudgetDomain
 import com.visa.R
 import com.visa.databinding.ViewholderBudgetBinding
 
@@ -20,14 +20,14 @@ class ReportListAdapter(private val items:MutableList<BudgetDomain>):
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): ReportListAdapter.Viewholder {
+    ): Viewholder {
         context=parent.context
         formatter= DecimalFormat("###,###,###,###")
         val binding=ViewholderBudgetBinding.inflate(LayoutInflater.from(context), parent, false)
         return Viewholder(binding)
     }
 
-    override fun onBindViewHolder(holder: ReportListAdapter.Viewholder, position: Int) {
+    override fun onBindViewHolder(holder: Viewholder, position: Int) {
         val item=items[position]
 
         holder.binding.titleTxt.text=item.title

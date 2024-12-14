@@ -1,12 +1,12 @@
-package com.example.visa.Activity
+package com.visa.Activity
 
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.visa.Adapter.ReportListAdapter
-import com.example.visa.ViewModel.MainViewModel
+import com.visa.Adapter.ReportListAdapter
+import com.visa.ViewModel.MainViewModel
 import com.visa.databinding.ActivityReportBinding
 
 class ReportActivity : AppCompatActivity() {

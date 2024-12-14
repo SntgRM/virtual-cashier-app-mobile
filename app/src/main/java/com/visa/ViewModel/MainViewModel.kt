@@ -1,7 +1,7 @@
-package com.example.visa.ViewModel
+package com.visa.ViewModel
 
 import androidx.lifecycle.ViewModel
-import com.example.visa.Repository.MainRepository
+import com.visa.Repository.MainRepository
 
 class MainViewModel(val repository:MainRepository):ViewModel() {
     constructor():this(MainRepository())

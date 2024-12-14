@@ -21,5 +21,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "virtual-cashier-app-mobile"
+rootProject.name = "Visa"
 include(":app")

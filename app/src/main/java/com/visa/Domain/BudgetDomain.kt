@@ -1,40 +1,36 @@
-package com.example.visa.Domain
+package com.visa.Domain
 
 import android.os.Parcel
 import android.os.Parcelable
 
-data class ExpenseDomain(
+data class BudgetDomain(
     val title:String="",
     val price:Double=0.0,
-    val pic:String="",
-    val time:String=""
-
+    val percent:Double=0.0
 ):Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString().toString(),
         parcel.readDouble(),
-        parcel.readString().toString(),
-        parcel.readString().toString()
+        parcel.readDouble()
     ) {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(title)
         parcel.writeDouble(price)
-        parcel.writeString(pic)
-        parcel.writeString(time)
+        parcel.writeDouble(percent)
     }
 
     override fun describeContents(): Int {
         return 0
     }
 
-    companion object CREATOR : Parcelable.Creator<ExpenseDomain> {
-        override fun createFromParcel(parcel: Parcel): ExpenseDomain {
-            return ExpenseDomain(parcel)
+    companion object CREATOR : Parcelable.Creator<BudgetDomain> {
+        override fun createFromParcel(parcel: Parcel): BudgetDomain {
+            return BudgetDomain(parcel)
         }
 
-        override fun newArray(size: Int): Array<ExpenseDomain?> {
+        override fun newArray(size: Int): Array<BudgetDomain?> {
             return arrayOfNulls(size)
         }
     }

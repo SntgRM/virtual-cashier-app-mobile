@@ -1,4 +1,4 @@
-package com.example.visa.Adapter
+package com.visa.Adapter
 
 import android.content.Context
 import android.icu.text.DecimalFormat
@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.visa.Domain.ExpenseDomain
+import com.visa.Domain.ExpenseDomain
 import com.visa.databinding.ViewholderItemsBinding
 
 class ExpenseListAdapter(private val items:MutableList<ExpenseDomain>) :

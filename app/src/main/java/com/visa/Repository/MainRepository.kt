@@ -1,7 +1,7 @@
-package com.example.visa.Repository
+package com.visa.Repository
 
-import com.example.visa.Domain.BudgetDomain
-import com.example.visa.Domain.ExpenseDomain
+import com.visa.Domain.BudgetDomain
+import com.visa.Domain.ExpenseDomain
 
 class MainRepository {
     val items = mutableListOf(
