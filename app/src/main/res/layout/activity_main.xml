@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.visa.Activity.MainActivity">
+    tools:context=".Activity.MainActivity">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -26,7 +26,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:paddingTop="50dp">
 
                     <TextView
                         android:id="@+id/textView"
@@ -176,10 +177,10 @@
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
-                                android:id="@+id/textView7"
+                                android:id="@+id/amount"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="$3,546.31"
+                                android:text="$3,546.0"
                                 android:textColor="@color/white"
                                 android:textSize="30sp"
                                 android:textStyle="bold"
@@ -202,6 +203,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/depositButton"
                     android:layout_width="0dp"
                     android:layout_height="78dp"
                     android:layout_marginStart="8dp"
@@ -222,7 +224,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Depósito"
+                        android:text="Depositar"
                         android:textAlignment="center"
                         android:textColor="@color/dark_blue"
                         android:textSize="12sp"
@@ -230,6 +232,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/withdrawButton"
                     android:layout_width="0dp"
                     android:layout_height="78dp"
                     android:layout_marginStart="8dp"
@@ -258,6 +261,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/sendButton"
                     android:layout_width="0dp"
                     android:layout_height="78dp"
                     android:layout_marginStart="8dp"
@@ -278,7 +282,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Añadir tarjeta"
+                        android:text="Enviar"
                         android:textAlignment="center"
                         android:textColor="@color/dark_blue"
                         android:textSize="12sp"
